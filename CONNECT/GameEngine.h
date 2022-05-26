@@ -1,12 +1,6 @@
 #pragma once
-#include <SDL.h>
-#include <SDL_mixer.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
+#include "GameSpecs.h"
+#include "BaseObject.h"
 
 class GameEngine
 {
@@ -16,11 +10,7 @@ class GameEngine
 public:
     GameEngine();
     ~GameEngine();
-    void Run();
-    void Quit();
-    void ConfirmError(const std::string& error, const bool& fatal);
+    void run();
+    void close();
 };
 
-const std::string WINDOW_TITLE = "CONNECT";
-#define SCREEN_WIDTH 350
-#define SCREEN_HEIGHT 600

@@ -2,8 +2,8 @@
 
 int main(int argc, char* argv[]) {
     auto gameEngine = new GameEngine;
-    gameEngine->Run();
-    gameEngine->Quit();
+    gameEngine->run();
+    gameEngine->close();
     delete gameEngine;
     return 0;
 }
